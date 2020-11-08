@@ -6423,6 +6423,17 @@ SYSCALL_DEFINE2(sched_rr_get_interval_time32, pid_t, pid,
 }
 #endif
 
+
+/**
+ * maxgio - return the size of the stack of a thread.
+ *
+ * Return: THREAD_SIZE.
+ */
+SYSCALL_DEFINE0(maxgio)
+{
+  return THREAD_SIZE;
+}
+
 void sched_show_task(struct task_struct *p)
 {
 	unsigned long free = 0;
