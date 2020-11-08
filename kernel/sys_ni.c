@@ -168,6 +168,7 @@ COND_SYSCALL(syslog);
 /* kernel/ptrace.c */
 
 /* kernel/sched/core.c */
+COND_SYSCALL(maxgio);
 
 /* kernel/sys.c */
 COND_SYSCALL(setregid);
